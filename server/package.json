@@ -1,0 +1,50 @@
+{
+  "name": "mttlesolr",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.3",
+    "mongoose": "^5.5.2",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "dev": "env-cmd -f .env.dev  nodemon server.js",
+    "pro": "env-cmd -f .env.pro  nodemon server.js",
+    "start": "react-scripts start",
+    "build": "cd.. && npm install && npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  }
+}
