@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "env-cmd -f .env.dev  nodemon server.js",
     "pro": "env-cmd -f .env.pro  nodemon server.js",
-    "start": "react-scripts start",
+    "start": "env-cmd -f .env.pro  nodemon server.js",
     "build": "cd.. && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
